@@ -2,13 +2,13 @@
 
 
 ```typescript
-@Bot("<your bot's API token")
+@Bot("<your bot's API token>")
 export class SerabassBot extends BotAbstract {
   public static instance: SerabassBot;
 
   @Start()
   @Hears(/hi/i)
-  protected reply2(ctx: ContextMessageUpdate) {
+  protected replyHi(ctx: ContextMessageUpdate) {
     return ctx.reply("Hello");
   }
 
