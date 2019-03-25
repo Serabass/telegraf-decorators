@@ -1,0 +1,15 @@
+{
+  "name": "telegraf-decorators",
+  "version": "1.0.0",
+  "description": "Decorators for telegraf (A Telegram bot framework)",
+  "main": "dist/index.js",
+  "author": "Serabass",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "telegraf": "^3.27.1"
+  }
+}
