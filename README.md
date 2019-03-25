@@ -1,7 +1,14 @@
 # Example usage
 
+```
+ $ npm i telegraf-decorators
+```
 
 ```typescript
+import { ContextMessageUpdate } from "telegraf";
+import { Start, Sticker, Hears, Bot } from "telegraf-decorators";
+import { BotAbstract } from "telegraf-decorators";
+
 @Bot("<your bot's API token>")
 export class SerabassBot extends BotAbstract {
   public static instance: SerabassBot;
