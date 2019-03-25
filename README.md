@@ -1,3 +1,5 @@
+Simple decorators for [https://www.npmjs.com/package/telegraf](telegraf) framework.
+
 # Example usage
 
 ```
@@ -9,7 +11,7 @@ import { ContextMessageUpdate } from "telegraf";
 import { Start, Sticker, Hears, Bot } from "telegraf-decorators";
 import { BotAbstract } from "telegraf-decorators";
 
-@Bot("<your bot's API token>")
+@Bot("<API token>")
 export class SerabassBot extends BotAbstract {
   public static instance: SerabassBot;
 
@@ -25,4 +27,7 @@ export class SerabassBot extends BotAbstract {
     return ctx.reply("I didn't understand you :(");
   }
 }
+
+SerabassBot.instance.launch();
+
 ```
